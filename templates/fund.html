@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}基金定投回报{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+    <form method="post">
+        <p>Symbol:<input type="text" name="symbol" /></p>
+        <input type="submit" value="Submit" />
+    </form>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Monday</th>
+                <th>name</th>
+                <th>ticktime</th>
+                <th>price</th>
+                <th>volume</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+{% endblock %}
