@@ -11,7 +11,7 @@
         <p>Symbol:<input type="text" name="symbol" /></p>
         <input type="submit" value="Submit" />
     </form>
-    {% for symbol in symbol_list %}
+    {% for symbol in history_symbols %}
         <span><a href="/fund?symbol={{ symbol }}">{{ symbol }}</a></span>
     {% endfor %}
     <table class="table table-condensed">

@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Money$Money.coverage" NAME="Money Coverage Results" MODIFIED="1510283168864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Money$Money.coverage" NAME="Money Coverage Results" MODIFIED="1510298432509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,13 +36,6 @@
         <item name="postgres" type="e3449647:DbNodeDescriptor" />
         <item name="public" type="e3449647:DbNodeDescriptor" />
       </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="postgres" type="e3449647:DbNodeDescriptor" />
-        <item name="public" type="e3449647:DbNodeDescriptor" />
-        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
-      </path>
     </expand>
     <select />
   </component>
@@ -51,55 +44,104 @@
       <file leaf-file-name="Money.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Money.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="224" column="41" lean-forward="false" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
+            <state relative-caret-position="563">
+              <caret line="289" column="16" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
               <folding>
-                <element signature="e#5048#5185#0" expanded="false" />
-                <element signature="e#5219#5334#0" expanded="false" />
-                <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-                <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-                <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-                <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-                <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-                <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-                <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-                <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-                <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-                <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-                <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-                <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-                <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-                <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
+                <element signature="e#15#64#0" expanded="true" />
+                <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+                <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+                <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+                <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+                <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+                <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+                <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+                <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+                <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+                <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+                <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+                <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+                <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+                <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fund.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/fund.html">
+      <file leaf-file-name="scatter.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="247">
+              <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="symbol.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/symbol.html">
+      <file leaf-file-name="scatter3D.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter3D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+            <state relative-caret-position="-409">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top_bill.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/top_bill.html">
+      <file leaf-file-name="wordcloud.py" pinned="false" current-in-tab="true">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/wordcloud.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geo.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/geo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liquid.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/liquid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radar.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/radar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-285">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fundsta.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fundsta.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,18 +150,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="380">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,9 +178,10 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/symbol.html" />
         <option value="$PROJECT_DIR$/templates/top_bill.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/Money.py" />
         <option value="$PROJECT_DIR$/templates/fund.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/fundsta.html" />
+        <option value="$PROJECT_DIR$/Money.py" />
       </list>
     </option>
   </component>
@@ -180,8 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,10 +225,51 @@
               <item name="Money" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="pyecharts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7.13 (C:\Python27\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="pyecharts" type="462c0819:PsiDirectoryNode" />
+              <item name="charts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,16 +336,15 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2679083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16404012" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26432666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -282,6 +353,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -303,25 +375,88 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="224" column="41" lean-forward="false" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
+          <folding>
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/top_bill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/symbol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fund.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Money.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5048#5185#0" expanded="false" />
-            <element signature="e#5219#5334#0" expanded="false" />
-            <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-            <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-            <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-            <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-            <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
           </folding>
         </state>
       </provider>
@@ -363,22 +498,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5048#5185#0" expanded="false" />
-            <element signature="e#5219#5334#0" expanded="false" />
-            <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-            <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-            <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-            <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-            <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
           </folding>
         </state>
       </provider>
@@ -412,22 +546,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5048#5185#0" expanded="false" />
-            <element signature="e#5219#5334#0" expanded="false" />
-            <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-            <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-            <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-            <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-            <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
           </folding>
         </state>
       </provider>
@@ -453,22 +586,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5048#5185#0" expanded="false" />
-            <element signature="e#5219#5334#0" expanded="false" />
-            <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-            <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-            <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-            <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-            <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
           </folding>
         </state>
       </provider>
@@ -506,44 +638,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/top_bill.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
+        <state relative-caret-position="114">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Money.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="224" column="41" lean-forward="false" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
-          <folding>
-            <element signature="e#5048#5185#0" expanded="false" />
-            <element signature="e#5219#5334#0" expanded="false" />
-            <marker date="1510282996915" expanded="true" signature="1040:1116" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="1205:1216" ph="DROP TABLE m... " />
-            <marker date="1510282996915" expanded="true" signature="1269:1458" ph="CREATE TABLE... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="1553:1711" ph="INSERT INTO missing_value... " />
-            <marker date="1510282996915" expanded="true" signature="1853:1954" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2158" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2089:2203" ph="SELECT symbo... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="2341:2462" ph="SELECT * FRO... missing_value" />
-            <marker date="1510282996915" expanded="true" signature="3764:3841" ph="SELECT table... pg_tables" />
-            <marker date="1510282996915" expanded="true" signature="3925:3937" ph="DROP TABLE t... " />
-            <marker date="1510282996915" expanded="true" signature="3986:4050" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="4802:4850" ph="INSERT INTO tmissing_value... " />
-            <marker date="1510282996915" expanded="true" signature="5055:5112" ph="SELECT tdate... tmissing_value" />
-            <marker date="1510282996915" expanded="true" signature="5226:5258" ph="SELECT value... tmissing_value" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -557,8 +656,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/fund.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="247">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.t000970">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fundsta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Money.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="289" column="16" lean-forward="true" selection-start-line="289" selection-start-column="16" selection-end-line="289" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#64#0" expanded="true" />
+            <marker date="1510301697994" expanded="true" signature="1065:1141" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="1230:1241" ph="DROP TABLE m... " />
+            <marker date="1510301697994" expanded="true" signature="1294:1483" ph="CREATE TABLE... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="1578:1736" ph="INSERT INTO missing_value... " />
+            <marker date="1510301697994" expanded="true" signature="1878:1979" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2183" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2114:2228" ph="SELECT symbo... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="2366:2487" ph="SELECT * FRO... missing_value" />
+            <marker date="1510301697994" expanded="true" signature="3789:3866" ph="SELECT table... pg_tables" />
+            <marker date="1510301697994" expanded="true" signature="3950:3962" ph="DROP TABLE t... " />
+            <marker date="1510301697994" expanded="true" signature="4011:4075" ph="CREATE TABLE... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="4827:4875" ph="INSERT INTO tmissing_value... " />
+            <marker date="1510301697994" expanded="true" signature="5081:5138" ph="SELECT tdate... tmissing_value" />
+            <marker date="1510301697994" expanded="true" signature="5252:5284" ph="SELECT value... tmissing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/geo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/liquid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/radar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter3D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/wordcloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

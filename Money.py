@@ -1,8 +1,4 @@
-#coding:utf-8
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
+# coding:utf-8
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from pyecharts import Bar
@@ -12,12 +8,16 @@ import json
 import psycopg2
 from datetime import date
 from bs4 import BeautifulSoup
+import demjson
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 MONEY = 1000
 RATE = 0.9985
-WEEKDAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-symbol_list = []
-
+WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+history_symbols = []
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -136,13 +136,13 @@ def StoreFundData(symbol):
             sql = "INSERT INTO t%s (tdate, value) VALUES ('%s', %s)" % (symbol, tdate, value)
             # print sql
             cur.execute(sql)
-        if page * 20 > total_num:
+        if page * 20 >= total_num:
             break
         page += 1
     conn.commit()
 
 def GetFundData(symbol):
-    sql = "SELECT tdate,value FROM t%s ORDER BY tdate DESC LIMIT 500" % symbol
+    sql = "SELECT tdate,value FROM t%s ORDER BY tdate DESC LIMIT 300" % symbol
     cur.execute(sql)
     rows = cur.fetchall()
     return rows
@@ -176,7 +176,7 @@ def CalcFundByWeek(symbol):
         week_list.append((WEEKDAYS[weekday], money_sum,money_value,return_rate))
     return week_list
 
-def eBar(week_list):
+def eBarRate(week_list):
     attrs = []
     values = []
     for item in week_list:
@@ -185,6 +185,51 @@ def eBar(week_list):
     bar = Bar("定投回报")
     bar.add("回报率", attrs, values, mark_point=["max", "min"])
     return bar
+
+def GetSymbolList():
+    symbol_list = []
+    url = "http://vip.stock.finance.sina.com.cn/fund_center/api/jsonp.php/IO.XSRV2.CallbackList['Il$nvMbY72HdQyks']/NetValueReturn_Service.NetValueReturnOpen?page=1&num=100&sort=form_year&asc=0&ccode=&type2=0&type3=&%5Bobject%20HTMLDivElement%5D=546oa"
+    request = urllib2.Request(url=url)
+    response = urllib2.urlopen(request, timeout=20)
+    result = response.read().decode('gbk')
+
+    startPos = result.find('{')
+    jsonData = result[startPos:-2]
+    jsonData = jsonData
+    data = demjson.decode(jsonData)['data']
+    for item in data:
+        symbol_list.append(str(item['symbol']))
+
+    symbol_list.remove('000970')
+
+    return symbol_list
+
+def HandleWeekList(week_list):
+    rate_list = []
+    rate_list = []
+    for item in week_list:
+        rate_list.append(item[3])
+    return rate_list.index(max(rate_list)),rate_list.index(min(rate_list))
+
+def FundStatistic(symbol_list):
+    best_count_list = [0]*5
+    worst_count_list = [0] * 5
+    for symbol in symbol_list:
+        # print symbol
+        # StoreFundData(symbol)
+        week_list = CalcFundByWeek(symbol)
+        max_weekday,min_weekday = HandleWeekList(week_list)
+        best_count_list[max_weekday] += 1
+        worst_count_list[min_weekday] += 1
+    return best_count_list, worst_count_list
+
+def eBarCount(best_count_list, worst_count_list):
+    attrs = WEEKDAYS[:5]
+    bar = Bar("定投回报最佳日统计")
+    bar.add("最优次数", attrs, best_count_list, mark_point=["max", "min"])
+    bar.add("最差次数", attrs, worst_count_list, mark_point=["max", "min"])
+    return bar
+
 
 
 @app.route('/')
@@ -216,15 +261,25 @@ def Fund():
     elif 'symbol' in request.args:
         symbol = request.args['symbol']
     if symbol != '':
-        if symbol not in symbol_list:
+        if symbol not in history_symbols:
             StoreFundData(symbol)
-            symbol_list.append(symbol)
+            history_symbols.append(symbol)
         week_list = CalcFundByWeek(symbol)
-    bar = eBar(week_list)
+    bar = eBarRate(week_list)
     return render_template('fund.html',
                            symbol=symbol,
                            week_list=week_list,
-                           symbol_list=symbol_list,
+                           history_symbols=history_symbols,
+                           bar=bar.render_embed(),
+                           host=DEFAULT_HOST,
+                           script_list=['echarts.min'])
+
+@app.route('/fundsta')
+def FundTopSta():
+    symbol_list = GetSymbolList()
+    best_count_list, worst_count_list = FundStatistic(symbol_list)
+    bar = eBarCount(best_count_list, worst_count_list)
+    return render_template('fundsta.html',
                            bar=bar.render_embed(),
                            host=DEFAULT_HOST,
                            script_list=['echarts.min'])
