@@ -3,24 +3,37 @@
 {% block title %}基金定投回报{% endblock %}
 
 {% block page_content %}
+    {% for jsfile_name in script_list %}
+        <script src="{{host}}/{{jsfile_name}}.js"></script>
+    {% endfor %}
     <div class="container">
     <form method="post">
         <p>Symbol:<input type="text" name="symbol" /></p>
         <input type="submit" value="Submit" />
     </form>
+    {% for symbol in symbol_list %}
+        <span><a href="/fund?symbol={{ symbol }}">{{ symbol }}</a></span>
+    {% endfor %}
     <table class="table table-condensed">
+        <caption class="text-center">基金代号：{{ symbol }}</caption>
         <thead>
             <tr>
-                <th>Monday</th>
-                <th>name</th>
-                <th>ticktime</th>
-                <th>price</th>
-                <th>volume</th>
+                <th>Weekday</th>
+                <th>MoneySum</th>
+                <th>MoneyValue</th>
+                <th>ReturnRate</th>
             </tr>
         </thead>
         <tbody>
-
+        {% for item in week_list %}
+            <tr>
+            {% for td in item %}
+                <td>{{ td }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
         </tbody>
     </table>
+    {{bar|safe}}
     </div>
 {% endblock %}
