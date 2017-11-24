@@ -10,6 +10,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav nav-pills">
                     <li><a href="/">新闻</a></li>
+                    <li><a href="/hs300">沪深300</a></li>
                     <li><a href="/tb">大单</a></li>
                     <li><a href="/fund">基金</a></li>
                     <li><a href="/fundsta">统计</a></li>
@@ -20,6 +21,8 @@
 {% endblock %}
 
 {% block content %}
+    <script src="https://chfw.github.io/jupyter-echarts/echarts/echarts.min.js"></script>
+    <script src="/static/echarts.min.js"></script>
     <div class="container">
         {% block page_content %}{% endblock %}
     </div>

@@ -5,6 +5,231 @@
 {% block page_content %}
     <div class="container">
     <h1 class="text-center"><a href="http://finance.sina.com.cn/realstock/company/{{ symbol_list[0][0] }}/nc.shtml" >{{ symbol_list[0][1] }}</a></h1>
+    <div id="main" style="width: 100%;height:400px;"></div>
+    <div id="sub" style="width: 100%;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var data = {{ total_list | safe }};
+
+        var times = 100
+
+        option = {
+            backgroundColor: new echarts.graphic.RadialGradient(0.3, 0.3, 0.8, [{
+                offset: 0,
+                color: '#f7f8fa'
+            }, {
+                offset: 1,
+                color: '#cdd0d5'
+            }]),
+            title: {
+                text: '实时大单'
+            },
+            tooltip: {
+
+            },
+            legend: {
+                data: ['U', 'D', 'E']
+            },
+            xAxis: {
+                offset: 6,
+                type: 'time',
+                splitLine: {
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                }
+            },
+            yAxis: {
+                name: '涨跌(%)',
+                min: -10,
+                max: 10,
+                splitLine: {
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                },
+                scale: true
+            },
+            dataZoom: [
+                {
+                    type: 'slider',
+                    show: true,
+                    xAxisIndex: [0],
+                },
+                {
+                    type: 'inside',
+                    xAxisIndex: [0],
+                }
+            ],
+            series: [{
+                name: 'U',
+                data: data[0],
+                type: 'scatter',
+                symbolSize: function (data) {
+                    return Math.sqrt(data[2]) / times;
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(120, 36, 50, 0.5)',
+                        shadowOffsetY: 5,
+                        color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                            offset: 0,
+                            color: 'rgb(251, 118, 123)'
+                        }, {
+                            offset: 1,
+                            color: 'rgb(204, 46, 72)'
+                        }])
+                    }
+                }
+            }, {
+                name: 'D',
+                data: data[1],
+                type: 'scatter',
+                symbolSize: function (data) {
+                    return Math.sqrt(data[2]) / times;
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(25, 100, 150, 0.5)',
+                        shadowOffsetY: 5,
+                        color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                            offset: 0,
+                            color: 'rgb(129, 227, 238)'
+                        }, {
+                            offset: 1,
+                            color: 'rgb(25, 183, 207)'
+                        }])
+                    }
+                }
+            },{
+                name: 'E',
+                data: data[2],
+                type: 'scatter',
+                symbolSize: function (data) {
+                    return Math.sqrt(data[2]) / times;
+                },
+                itemStyle: {
+                    normal: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(150, 100, 25, 0.5)',
+                        shadowOffsetY: 5,
+                        color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                            offset: 0,
+                            color: 'rgb(255, 227, 20)'
+                        }, {
+                            offset: 1,
+                            color: 'rgb(200, 183, 50)'
+                        }])
+                    }
+                },
+{#                markLine: {#}
+{#                    data: [#}
+{#                        {#}
+{#                        name:'settlement',#}
+{#                        yAxis: 0#}
+{#                     }#}
+{#                     ]#}
+{#                }#}
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+        // 基于准备好的dom，初始化echarts实例
+        var subChart = echarts.init(document.getElementById('sub'));
+
+        var subdata = {{ history_list | safe }};
+
+        suboption = {
+            title: {
+                text: '近日变动'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                    }
+                }
+            },
+            legend: {
+                data:['成交量','U','D','E', '排名']
+            },
+            xAxis: [
+            {
+                type: 'category',
+                data: subdata[0],
+                axisPointer: {
+                    type: 'shadow'
+                }
+            }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '成交量'
+                },
+                {
+                    type: 'value',
+                    name: '排名'
+                }
+            ],
+            series: [
+                {
+                    name:'成交量',
+                    type:'bar',
+                    data:subdata[2]
+                },
+                {
+                    name:'U',
+                    type:'bar',
+                    barWidth : 20,
+                    stack: '成交量',
+                    data:subdata[4]
+                },
+                {
+                    name:'D',
+                    type:'bar',
+                    stack: '成交量',
+                    data:subdata[5]
+                },
+                {
+                    name:'E',
+                    type:'bar',
+                    stack: '成交量',
+                    data:subdata[6]
+                },
+                {
+                    name:'排名',
+                    type:'line',
+                    data:subdata[3],
+                    yAxisIndex: 1,
+                    markPoint: {
+                        data: [
+                            {
+                                name: '最大值',
+                                type: 'max'
+                            },
+                            {
+                                name: '最小值',
+                                type: 'min'
+                            }
+                        ]
+                    }
+                }
+                ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        subChart.setOption(suboption);
+    </script>
+
     <table class="table table-condensed">
         <thead>
             <tr>
