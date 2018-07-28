@@ -173,7 +173,7 @@
             yAxis: [
                 {
                     type: 'value',
-                    name: '成交量'
+                    name: '成交量(万)'
                 },
                 {
                     type: 'value',
@@ -184,31 +184,31 @@
                 {
                     name:'成交量',
                     type:'bar',
-                    data:subdata[2]
+                    data:subdata[1]
                 },
                 {
                     name:'U',
                     type:'bar',
                     barWidth : 20,
                     stack: '成交量',
-                    data:subdata[4]
+                    data:subdata[2]
                 },
                 {
                     name:'D',
                     type:'bar',
                     stack: '成交量',
-                    data:subdata[5]
+                    data:subdata[3]
                 },
                 {
                     name:'E',
                     type:'bar',
                     stack: '成交量',
-                    data:subdata[6]
+                    data:subdata[4]
                 },
                 {
                     name:'排名',
                     type:'line',
-                    data:subdata[3],
+                    data:subdata[5],
                     yAxisIndex: 1,
                     markPoint: {
                         data: [

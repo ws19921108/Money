@@ -10,125 +10,72 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Money$init.coverage" NAME="init Coverage Results" MODIFIED="1528774856847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Money$Money.coverage" NAME="Money Coverage Results" MODIFIED="1528790679848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Money$spider.coverage" NAME="spider Coverage Results" MODIFIED="1528790692335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Money$threedoor.coverage" NAME="threedoor Coverage Results" MODIFIED="1511418084641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Money$Money.coverage" NAME="Money Coverage Results" MODIFIED="1511419318139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand>
       <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="postgres" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="postgres" type="e3449647:DbNodeDescriptor" />
-        <item name="public" type="e3449647:DbNodeDescriptor" />
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Money.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Money.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Money.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="28">
+              <caret line="326" column="22" selection-start-line="326" selection-start-column="22" selection-end-line="326" selection-end-column="22" />
               <folding>
                 <element signature="e#15#73#0" expanded="true" />
-                <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-                <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-                <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-                <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-                <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-                <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-                <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-                <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-                <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-                <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-                <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-                <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-                <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-                <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-                <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+                <element signature="e#700#832#0" />
+                <element signature="e#864#1075#0" />
+                <element signature="e#1117#1554#0" />
+                <element signature="e#1588#1815#0" />
+                <element signature="e#1859#2101#0" />
+                <element signature="e#2130#3267#0" />
+                <element signature="e#3300#4644#0" />
+                <element signature="e#4927#5286#0" />
+                <element signature="e#5328#5474#0" />
+                <element signature="e#5514#6062#0" />
+                <element signature="e#6096#6674#0" />
+                <element signature="e#6708#7205#0" />
+                <element signature="e#7239#8486#0" />
+                <element signature="e#8518#8655#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hssymbol.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hssymbol.html">
+      <file leaf-file-name="spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="3879">
+              <caret line="152" column="35" lean-forward="true" selection-start-line="152" selection-start-column="35" selection-end-line="152" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="201711031615387484.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/201711031615387484.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleHTTPSServer/__init__.py">
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hs300.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hs300.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="72" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="symbol.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/symbol.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="280">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -149,12 +96,25 @@
       <find>today</find>
       <find>where</find>
       <find>%22</find>
-      <find>DateFormat</find>
       <find>print</find>
       <find>urllib2</find>
       <find>Request</find>
       <find>urllib</find>
       <find>req</find>
+      <find>get_finance_top_sina</find>
+      <find>day</find>
+      <find>conn</find>
+      <find>commo</find>
+      <find>GetHs300FromDb</find>
+      <find>GetHs300Symbol</find>
+      <find>DateFormat</find>
+      <find>get_top_bill_symbol</find>
+      <find>get_top_bill_by_symbol</find>
+      <find>index</find>
+      <find>HandleSymbolList</find>
+      <find>HandleSymbolHistory</find>
+      <find>get_symbol_from_topbill</find>
+      <find>StoreFundData</find>
     </findStrings>
     <replaceStrings>
       <replace>print(</replace>
@@ -176,17 +136,21 @@
         <option value="$PROJECT_DIR$/templates/fundsta.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1adb1a2e-41e0-4b47-8d09-992397338576/console.sql" />
         <option value="$PROJECT_DIR$/templates/symbol_backup.html" />
-        <option value="$PROJECT_DIR$/templates/symbol.html" />
         <option value="$PROJECT_DIR$/templates/hs300.html" />
         <option value="src:table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.hs300_20171115" />
-        <option value="$PROJECT_DIR$/templates/hssymbol.html" />
         <option value="$PROJECT_DIR$/templates/ma.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleHTTPSServer/__init__.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleCV/base.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleCV/Camera.py" />
         <option value="$PROJECT_DIR$/threedoor.py" />
+        <option value="$PROJECT_DIR$/templates/hssymbol.html" />
+        <option value="$PROJECT_DIR$/templates/symbol.html" />
         <option value="$PROJECT_DIR$/Money.py" />
+        <option value="$PROJECT_DIR$/init.py" />
+        <option value="$PROJECT_DIR$/spider.py" />
+        <option value="$PROJECT_DIR$/task.py" />
+        <option value="$PROJECT_DIR$/tasks.py" />
       </list>
     </option>
   </component>
@@ -196,30 +160,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="390" />
-    <option name="y" value="-12" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="y" value="-15" />
+    <option name="width" value="1460" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,14 +182,16 @@
               <item name="Money" type="b2602c69:ProjectViewProjectNode" />
               <item name="Money" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
             <path>
-              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Money" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Money" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Money" type="cbb8eebc:String" user="Money" />
             </path>
           </expand>
           <select />
@@ -243,11 +200,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python36/python.exe" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -267,8 +225,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Money">
+  <component name="RunManager" selected="Python.spider">
     <configuration name="Money" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <module name="Money" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -279,14 +238,15 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Money" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Money.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="threedoor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="init" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Money" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -297,25 +257,67 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/init.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Money" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="threedoor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Money" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threedoor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.Money" />
-      <item index="1" class="java.lang.String" itemvalue="Python.threedoor" />
+    <list>
+      <item itemvalue="Python.Money" />
+      <item itemvalue="Python.threedoor" />
+      <item itemvalue="Python.init" />
+      <item itemvalue="Python.spider" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.threedoor" />
+      <list>
+        <item itemvalue="Python.spider" />
+        <item itemvalue="Python.init" />
+        <item itemvalue="Python.threedoor" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -337,50 +339,57 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49426934" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5601719" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29704303" sideWeight="0.49426934" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.43982807" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16189112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16404012" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2965616" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49426934" weight="0.3293011" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.56119794" side_tool="true" weight="0.32827586" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4388021" weight="0.3475862" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49426934" weight="0.2962963" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34045583" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16823056" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.2965616" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="运行" order="7" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="11" sideWeight="0.49934897" weight="0.3213793" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="调试" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" />
+      <window_info anchor="right" id="Data View" order="4" weight="0.3295129" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49426934" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5601719" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29704303" sideWeight="0.49426934" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.43982807" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15974212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16404012" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2965616" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32258064" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15974212" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="4" weight="0.3295129" />
+      <window_info id="Structure" order="1" weight="0.2965616" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49426934" weight="0.3293011" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.43982807" weight="0.3293011" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16404012" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5601719" side_tool="true" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49426934" weight="0.29704303" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,499 +404,295 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/fund.html">
+    <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="4340">
+          <caret line="326" column="22" selection-start-line="326" selection-start-column="22" selection-end-line="326" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#73#0" expanded="true" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="6194">
+          <caret line="326" column="22" selection-start-line="326" selection-start-column="22" selection-end-line="326" selection-end-column="22" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-            <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-            <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fund.html">
+    <entry file="file://$PROJECT_DIR$/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/top_bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
-          <folding />
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2584">
+          <caret line="307" column="47" selection-start-line="296" selection-start-column="4" selection-end-line="307" selection-end-column="47" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-            <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-            <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/symbol.html">
+    <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="149" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="149" />
-          <folding />
+        <state relative-caret-position="779">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="2812">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2584">
+          <caret line="307" column="47" selection-start-line="296" selection-start-column="4" selection-end-line="307" selection-end-column="47" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-            <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-            <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="779">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="2812">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2584">
+          <caret line="307" column="47" lean-forward="true" selection-start-line="296" selection-start-column="4" selection-end-line="307" selection-end-column="47" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-            <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-            <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.py" />
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.top_bill20171109">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="symbol='sh601388'" />
-            <filter text="symbol='sz000955'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.t501000">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.t000970">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/geo.py">
+    <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="779">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter.py">
+    <entry file="file://$PROJECT_DIR$/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Money.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7657">
+          <caret line="403" column="26" lean-forward="true" selection-start-line="403" selection-start-column="26" selection-end-line="403" selection-end-column="26" />
+          <folding>
+            <element signature="e#15#73#0" expanded="true" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="52" />
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/scatter3D.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/wordcloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/liquid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pyecharts/charts/radar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fund.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.top_bill20171110">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/symbol_backup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.top_bill20171110">
+    <entry file="das://1adb1a2e-41e0-4b47-8d09-992397338576/database/postgres/schema/public/table/t000878">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.top_bill20171114">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" text="symbol='sz000977' ">
-            <filter text="symbol='sz000977'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/symbol_bk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fundsta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1adb1a2e-41e0-4b47-8d09-992397338576/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="84" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.hs300_20171116">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/top_bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.hs300_20171116">
+    <entry file="das://1adb1a2e-41e0-4b47-8d09-992397338576/database/postgres/schema/public/table/fund_list">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.hs300_20171115">
+    <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="779">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/symbol.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/celery/app/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="161">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ma.html" />
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hs300.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="72" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/onenet-device/device.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hssymbol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/d0243653/1adb1a2e-41e0-4b47-8d09-992397338576/postgres.public.t000619">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleHTTPSServer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleCV/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="49" column="14" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/SimpleCV/Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="362" column="119" lean-forward="false" selection-start-line="362" selection-start-column="119" selection-end-line="362" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/201711031615387484.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threedoor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Money.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="28">
+          <caret line="326" column="22" selection-start-line="326" selection-start-column="22" selection-end-line="326" selection-end-column="22" />
           <folding>
             <element signature="e#15#73#0" expanded="true" />
-            <marker date="1511419238560" expanded="true" signature="1033:1109" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="1198:1209" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="1262:1451" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="1546:1704" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="1840:1941" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="2059:2164" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="2291:2346" ph="SELECT settl... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3080:3156" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="3245:3256" ph="DROP TABLE m... " />
-            <marker date="1511419238560" expanded="true" signature="3309:3586" ph="CREATE TABLE... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="3669:3906" ph="INSERT INTO missing_value... " />
-            <marker date="1511419238560" expanded="true" signature="4304:4418" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="4556:4677" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="5393:5500" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="5633:5751" ph="SELECT symbo... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="6248:6312" ph="SELECT kind,... missing_value" />
-            <marker date="1511419238560" expanded="true" signature="7979:8056" ph="SELECT table... pg_tables" />
-            <marker date="1511419238560" expanded="true" signature="8140:8152" ph="DROP TABLE t... " />
-            <marker date="1511419238560" expanded="true" signature="8201:8265" ph="CREATE TABLE... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9003:9051" ph="INSERT INTO tmissing_value... " />
-            <marker date="1511419238560" expanded="true" signature="9257:9314" ph="SELECT tdate... tmissing_value" />
-            <marker date="1511419238560" expanded="true" signature="9428:9460" ph="SELECT value... tmissing_value" />
+            <element signature="e#700#832#0" />
+            <element signature="e#864#1075#0" />
+            <element signature="e#1117#1554#0" />
+            <element signature="e#1588#1815#0" />
+            <element signature="e#1859#2101#0" />
+            <element signature="e#2130#3267#0" />
+            <element signature="e#3300#4644#0" />
+            <element signature="e#4927#5286#0" />
+            <element signature="e#5328#5474#0" />
+            <element signature="e#5514#6062#0" />
+            <element signature="e#6096#6674#0" />
+            <element signature="e#6708#7205#0" />
+            <element signature="e#7239#8486#0" />
+            <element signature="e#8518#8655#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3879">
+          <caret line="152" column="35" lean-forward="true" selection-start-line="152" selection-start-column="35" selection-end-line="152" selection-end-column="35" />
         </state>
       </provider>
     </entry>

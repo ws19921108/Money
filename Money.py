@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, url_for
 from flask_bootstrap import Bootstrap
 from pyecharts import Bar
-from pyecharts.constants import DEFAULT_HOST
+
 from urllib import request as req
 import json
 import psycopg2
@@ -15,12 +15,59 @@ MONEY = 1000
 RATE = 0.9985
 WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 history_symbols = []
-
+DEFAULT_HOST = "https://pyecharts.github.io/assets/js"
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
-conn = psycopg2.connect("dbname=postgres user=postgres")
-cur = conn.cursor()
+
 day = date.today().strftime("%Y%m%d")
+conn = psycopg2.connect("dbname=postgres user=postgres password=88888888")
+cur = conn.cursor()
+
+
+def get_news_from_db(table_name):
+    sql = "SELECT title, url FROM %s WHERE date='%s'" % (table_name, day)
+    cur.execute(sql)
+    rows = cur.fetchall()
+    return rows
+
+
+def get_hs300_from_db():
+    sql = "SELECT symbol, name, trade, changepercent, settlement, amount, ticktime FROM hs300 WHERE date='%s' " \
+          "ORDER BY amount DESC" % day
+    cur.execute(sql)
+    rows = cur.fetchall()
+    return rows
+
+
+def get_symbol_from_hs300(symbol):
+    sql = "SELECT date, settlement, amount, rank, name FROM hs300 WHERE symbol='%s'" % symbol
+    cur.execute(sql)
+    rows = cur.fetchall()
+    history_list = [[], [], [], []]
+    for row in rows:
+        history_list[0].append(row[0].strftime("%Y-%m-%d"))
+        history_list[1].append(row[1])
+        history_list[2].append(int(row[2]/10000))
+        history_list[3].append(row[3])
+    history_list.append(row[4])
+    return history_list
+
+
+def get_top_bill_symbol():
+    sql = "SELECT symbol, name, SUM(volume), settlement FROM topbill WHERE date='%s' " \
+          "GROUP BY (symbol, name, settlement) ORDER BY SUM(volume) DESC" % day
+    cur.execute(sql)
+    rows = cur.fetchall()
+    return rows
+
+
+def get_symbol_from_topbill(symbol):
+    sql = "SELECT symbol, name, ticktime, price, volume, prev_price, kind, settlement, ratio_avg_volume_20 " \
+          "FROM topbill WHERE symbol='%s' AND date='%s'" % (symbol, day)
+    cur.execute(sql)
+    rows = cur.fetchall()
+    return rows
+
 
 def store_top_bill():
     url = 'http://money.finance.sina.com.cn/d/api/openapi.php/CN_Bill.getBillTopListByDay'
@@ -48,27 +95,9 @@ def store_top_bill():
         cur.execute(sql)
     conn.commit()
 
-def GetHs300FromDb(table_name):
-    sql = "SELECT symbol, name, trade, changepercent, settlement, amount, ticktime FROM %s  ORDER BY amount DESC" % table_name
-    cur.execute(sql)
-    rows = cur.fetchall()
-    return rows
 
-def GetHs300Symbol(symbol):
-    sql = "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'hs300_%' ORDER BY tablename"
-    cur.execute(sql)
-    tables = cur.fetchall()
-    history_list = [[], [], [], []]
-    for table in tables:
-        sql = "SELECT settlement, amount, id FROM %s WHERE symbol='%s'" % \
-              (table[0], symbol)
-        cur.execute(sql)
-        row = cur.fetchone()
-        history_list[0].append(DateFormat(table[0],6))
-        history_list[1].append(row[0])
-        history_list[2].append(int(row[1]/10000))
-        history_list[3].append(row[2])
-    return history_list
+
+
 
 
 def StoreHs300Data():
@@ -103,27 +132,23 @@ def StoreHs300Data():
 #     rows = cur.fetchall()
 #     return rows
 
-def get_top_bill_symbol(table_name):
-    sql = "SELECT symbol, name, SUM(volume), settlement FROM %s GROUP BY (symbol, name, settlement) ORDER BY SUM(volume) DESC" % table_name
-    cur.execute(sql)
-    rows = cur.fetchall()
-    return rows
 
-def get_top_bill_by_symbol(table_name, symbol):
-    sql = "SELECT symbol, name, ticktime, price, volume, prev_price, kind, settlement, ratio_avg_volume_20 FROM %s WHERE symbol='%s'" % (table_name, symbol)
-    cur.execute(sql)
-    rows = cur.fetchall()
-    return rows
+
+
+
+
 
 def HandleSymbolList(symbol_list):
-    total_list = [[],[],[]]
+    total_list = [[], [], []]
     kind_list = ['U', 'D', 'E']
     for item in symbol_list:
         ticktime = date.today().strftime("%Y-%m-%d ") + item[2].strftime("%H:%M:%S")
         price = round((item[3] - item[7]) / item[7] * 100, 2)
         volume = item[4]
-        total_list[kind_list.index(item[6])].append([ticktime,price,volume])
+        total_list[kind_list.index(item[6])].append([ticktime, price, volume])
     return total_list
+
+
 
 def DateFormat(table_name,start):
     year = table_name[start:start+4]
@@ -133,44 +158,17 @@ def DateFormat(table_name,start):
 
 
 def HandleSymbolHistory(symbol):
-    sql = "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename LIKE 'top_bill%' ORDER BY tablename"
+    sql = "SELECT date, volume, kind_u, kind_d, kind_e, rank FROM topbill_history WHERE symbol='%s'" % symbol
     cur.execute(sql)
-    tables = cur.fetchall()
-    history_list = [[],[],[],[],[],[],[]]
-    for table in tables:
-        sql = "SELECT symbol, settlement, SUM(volume), rank() over(order by SUM(volume) desc)rank FROM %s GROUP BY symbol, settlement" % table[0]
-        cur.execute(sql)
-        rows = cur.fetchall()
-        found = 0
-        for row in rows:
-            if row[0] == symbol:
-                history_list[1].append(row[1])
-                history_list[2].append(int(row[2]))
-                history_list[3].append(int(row[3]))
-                found = 1
-                break
-        if not found:
-            history_list[1].append(0)
-            history_list[2].append(0)
-            history_list[3].append(-1)
-
-
-        sql = "SELECT kind, SUM(volume) FROM %s WHERE symbol='%s' GROUP BY kind" % (table[0], symbol)
-        cur.execute(sql)
-        rows = cur.fetchall()
-        tmp = [0,0,0]
-        for row in rows:
-            if row[0] == 'U':
-                tmp[0] = int(row[1])
-            elif row[0] == 'D':
-                tmp[1] = int(row[1])
-            elif row[0] == 'E':
-                tmp[2] = int(row[1])
-        for i in range(3):
-            history_list[i+4].append(tmp[i])
-
-        history_list[0].append(DateFormat(table[0],8))
-
+    rows = cur.fetchall()
+    history_list = [[], [], [], [], [], []]
+    for row in rows:
+        history_list[0].append(row[0].strftime("%Y-%m-%d"))
+        history_list[1].append(int(row[1] / 10000))
+        history_list[2].append(int(row[2] / 10000))
+        history_list[3].append(int(row[3] / 10000))
+        history_list[4].append(int(row[4] / 10000))
+        history_list[5].append(row[5])
     return history_list
 
 def get_finance_top_sina():
@@ -208,7 +206,6 @@ def get_finance_top_ntes():
 
 
 def StoreFundData(symbol):
-
     sql = "SELECT tablename FROM pg_tables WHERE schemaname='public' AND tablename='t%s'" % symbol
     cur.execute(sql)
     res = cur.fetchone()
@@ -245,17 +242,20 @@ def StoreFundData(symbol):
         page += 1
     conn.commit()
 
+
 def GetFundData(symbol):
     sql = "SELECT tdate,value FROM t%s ORDER BY tdate DESC LIMIT 300" % symbol
     cur.execute(sql)
     rows = cur.fetchall()
     return rows
 
+
 def GetLatestPrice(symbol):
     sql = "SELECT value FROM t%s WHERE id=1" % symbol
     cur.execute(sql)
     rows = cur.fetchone()
     return rows[0]
+
 
 def OrderFundByWeekday(symbol,weekday):
     count = 0
@@ -266,6 +266,7 @@ def OrderFundByWeekday(symbol,weekday):
             count += 1
             fund_num += MONEY * RATE / item[1]
     return count, fund_num
+
 
 def CalcFundByWeek(symbol):
     week_list = []
@@ -280,6 +281,7 @@ def CalcFundByWeek(symbol):
         week_list.append((WEEKDAYS[weekday], money_sum,money_value,return_rate))
     return week_list
 
+
 def eBarRate(week_list):
     attrs = []
     values = []
@@ -289,6 +291,7 @@ def eBarRate(week_list):
     bar = Bar("定投回报")
     bar.add("回报率", attrs, values, mark_point=["max", "min"])
     return bar
+
 
 def GetSymbolList():
     symbol_list = []
@@ -304,9 +307,10 @@ def GetSymbolList():
     for item in data:
         symbol_list.append(str(item['symbol']))
 
-    symbol_list.remove('000970')
+    #symbol_list.remove('000970')
 
     return symbol_list
+
 
 def HandleWeekList(week_list):
     rate_list = []
@@ -315,17 +319,19 @@ def HandleWeekList(week_list):
         rate_list.append(item[3])
     return rate_list.index(max(rate_list)),rate_list.index(min(rate_list))
 
+
 def FundStatistic(symbol_list):
     best_count_list = [0]*5
     worst_count_list = [0] * 5
     for symbol in symbol_list:
         # print symbol
-        # StoreFundData(symbol)
+        StoreFundData(symbol)
         week_list = CalcFundByWeek(symbol)
         max_weekday,min_weekday = HandleWeekList(week_list)
         best_count_list[max_weekday] += 1
         worst_count_list[min_weekday] += 1
     return best_count_list, worst_count_list
+
 
 def eBarCount(best_count_list, worst_count_list):
     attrs = WEEKDAYS[:5]
@@ -335,40 +341,40 @@ def eBarCount(best_count_list, worst_count_list):
     return bar
 
 
-
 @app.route('/')
 def News():
-    sina_list = get_finance_top_sina()
-    ntes_list = get_finance_top_ntes()
+    sina_list = get_news_from_db("sina_news")[:20]
+    ntes_list = get_news_from_db("nets_news")[:20]
     return render_template('index.html', sina_list=sina_list, ntes_list=ntes_list)
+
 
 @app.route('/hs300')
 def HS300():
-    StoreHs300Data()
-    table_name = 'hs300_' + day
-    hs_list = GetHs300FromDb(table_name)
+    hs_list = get_hs300_from_db()
     return render_template('hs300.html', hs_list=hs_list)
+
 
 @app.route('/hs300/<symbol>')
 def HS300Symbol(symbol):
-    history_list = GetHs300Symbol(symbol)
+    history_list = get_symbol_from_hs300(symbol)
     return render_template('hssymbol.html', symbol=symbol, history_list=history_list)
+
 
 @app.route('/tb')
 def TopBill():
-    store_top_bill()
-    table_name = 'top_bill' + day
-    bill_list = get_top_bill_symbol(table_name)
+    bill_list = get_top_bill_symbol()
     # print bill_list
     return render_template('top_bill.html', bill_list=bill_list)
 
+
 @app.route('/tb/<symbol>')
 def ShowSymbol(symbol):
-    table_name = 'top_bill' + day
-    symbol_list = get_top_bill_by_symbol(table_name, symbol)
+    symbol_list = get_symbol_from_topbill(symbol)
     total_list = HandleSymbolList(symbol_list)
-    history_list =  HandleSymbolHistory(symbol)
+    history_list = HandleSymbolHistory(symbol)
+    print(history_list)
     return render_template('symbol.html', symbol_list=symbol_list, total_list=total_list, history_list=history_list)
+
 
 @app.route('/fund', methods=['GET', 'POST'])
 def Fund():
@@ -392,6 +398,7 @@ def Fund():
                            host=DEFAULT_HOST,
                            script_list=['echarts.min'])
 
+
 @app.route('/fundsta')
 def FundTopSta():
     symbol_list = GetSymbolList()
@@ -402,7 +409,9 @@ def FundTopSta():
                            host=DEFAULT_HOST,
                            script_list=['echarts.min'])
 
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
     cur.close()
     conn.close()
+
